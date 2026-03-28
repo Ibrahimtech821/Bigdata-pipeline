@@ -1,3 +1,3 @@
-Cluster 0: 34683 samples
-Cluster 1: 129655 samples
-Cluster 2: 11034 samples
+Cluster 0: 87449 samples
+Cluster 1: 63726 samples
+Cluster 2: 24197 samples
