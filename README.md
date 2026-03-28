@@ -144,6 +144,12 @@ Dimensionality Reduction → Visualization → Clustering → Results
 - Docker setup enables reproducible environment across systems
 - Multiple branch implementations available for different use cases
 
+## Contributers
+Ibrahim Ahmed
+Farida Haitham
+Nardy Saleh
+Ahmed Taher
+
 ## Contributing
 
 Contributions across branches welcome. Ensure preprocessing maintains data integrity and visualization clarity.
