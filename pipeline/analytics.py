@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import subprocess
 
-df = pd.read_csv("data_preprocessed.csv")
+df = pd.read_csv(sys.argv[1])
 
 # INSIGHT 1: Average Spend and Top Segment Stats
 
