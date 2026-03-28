@@ -8,12 +8,14 @@ from sklearn.decomposition import PCA
 import subprocess
 import sys
 
-# Load data
-print("Loading data")
-df = pd.read_csv(sys.argv[1])
+print("Loading data...")
+chunks = []
+for chunk in pd.read_csv(sys.argv[1], chunksize=100000):
+    chunks.append(chunk)
+df = pd.concat(chunks, ignore_index=True)
 print(f"Loaded {df.shape[0]} rows, {df.shape[1]} columns")
 
-#  Data cleaning 
+
 print("\n Data Cleaning ")
 
 df.drop(['event_time','product_id','category_id','user_id','user_session'], axis=1, inplace=True)
@@ -29,7 +31,7 @@ df['category'] = df['category_code'].str.split('.').str[0]
 df.drop('category_code', axis=1, inplace=True)
 print(f"Extracted main category: {df['category'].nunique()} unique categories")
 
-#Stage 2: Feature transformation
+
 print("\n Feature Transformation ")
 
 top_brands = df['brand'].value_counts().nlargest(10).index
@@ -46,7 +48,7 @@ scaler = StandardScaler()
 df['price_scaled'] = scaler.fit_transform(df[['price']])
 print("Scaled price column")
 
-# Stage 3: Dimensionality reduction
+
 print("\n Stage 3: Dimensionality Reduction")
 
 features = ['event_type_encoded', 'category_type_encoded', 'brand_type_encoded', 'price_scaled']
@@ -58,7 +60,7 @@ print(f"Total variance kept: {sum(pca.explained_variance_ratio_):.2%}")
 
 df.drop(['event_type_encoded', 'brand_type_encoded', 'category_type_encoded', 'price_scaled'], axis=1, inplace=True)
 
-# Stage 4: discretization
+
 print("\n Stage 4: Discretization")
 
 bins = [0, 50, 500, 1000, 2000, float('inf')]
