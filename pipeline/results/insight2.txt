@@ -1,0 +1,7 @@
+INSIGHT 2: Correlation - Price vs PCA Components
+
+price vs PC3: r = +0.9303 (strong positive)
+price vs PC2: r = -0.3025 (moderate negative)
+price vs PC1: r = +0.2067 (weak positive)
+
+Strongest: price vs PC3 (r = +0.9303)

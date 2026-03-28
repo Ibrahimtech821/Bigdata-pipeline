@@ -1,0 +1,31 @@
+INSIGHT 3: Price Outlier and Distribution Analysis
+
+IQR fence: [-418.32, 868.72]
+Outliers: 5975 (8.64% of records)
+Outlier price range: $869.02 to $2574.07
+Skewness: 2.4169 - distribution is heavily right-skewed
+
+Outliers by Category
+  electronics: 2823
+  computers: 1479
+  appliances: 1121
+  construction: 345
+  sport: 102
+  furniture: 53
+  kids: 28
+  auto: 14
+  country_yard: 9
+  accessories: 1
+
+Outliers by Brand
+  other: 2787
+  apple: 1446
+  hp: 451
+  samsung: 439
+  lenovo: 261
+  lg: 204
+  asus: 179
+  bosch: 103
+  huawei: 61
+  casio: 23
+  xiaomi: 21

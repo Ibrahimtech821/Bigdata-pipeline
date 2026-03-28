@@ -2,7 +2,7 @@
 
 import sys
 import pandas as pd
-
+import subprocess
 
 def ingest(input_csv: str, output_csv: str = "data_raw.csv") -> None:
     df = pd.read_csv(input_csv)
@@ -16,7 +16,7 @@ def main() -> None:
         sys.exit(1)
 
     ingest(sys.argv[1])
-
+    subprocess.run(["python", "pre_process.py", "data_raw.csv"])
 
 if __name__ == "__main__":
     main()

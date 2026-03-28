@@ -1,0 +1,38 @@
+INSIGHT 1: Average Spend and Top Segment Stats
+
+Overall - mean: $305.42, median: $157.77, std: $382.37, min: $0.88, max: $2574.07
+
+Average Spend by Category
+sport: mean $403.97, median $239.13, count 881
+electronics: mean $385.20, median $223.68, count 21757
+computers: mean $365.67, median $178.64, count 11376
+country_yard: mean $332.37, median $234.97, count 207
+appliances: mean $278.55, median $164.71, count 18576
+construction: mean $268.39, median $145.81, count 5737
+furniture: mean $187.96, median $109.78, count 2608
+auto: mean $168.35, median $129.94, count 1668
+kids: mean $137.42, median $72.05, count 3329
+medicine: mean $87.55, median $59.15, count 43
+apparel: mean $75.58, median $65.64, count 1501
+accessories: mean $62.54, median $39.87, count 1175
+stationery: mean $55.02, median $19.05, count 270
+
+Price Tier Distribution
+budget: 13753 (19.9%)
+high-end: 4217 (6.1%)
+luxury: 534 (0.8%)
+mid-range: 42504 (61.5%)
+premium: 8120 (11.7%)
+
+Average Spend by Brand
+apple: mean $823.03, count 3714
+lenovo: mean $658.28, count 922
+lg: mean $571.93, count 1256
+hp: mean $563.84, count 1762
+asus: mean $475.88, count 1029
+samsung: mean $429.08, count 3586
+bosch: mean $339.73, count 1553
+huawei: mean $255.67, count 1232
+other: mean $240.36, count 50760
+xiaomi: mean $215.16, count 2488
+casio: mean $158.69, count 826
